@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huaibei.mapper.TeachersMapper">
+    <select id="selectCustomer" resultType="com.huaibei.entity.Teacher">
+        select t.*
+        from teacher t
+    </select>
+    <select id="selectCustomerPage" resultType="com.huaibei.entity.Teacher">
+        select t.*
+        from teacher t
+        where t.age &lt;= #{age}
+    </select>
+</mapper>

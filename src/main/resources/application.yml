@@ -1,0 +1,50 @@
+spring:
+  profiles:
+    active: dev
+  springfox:
+    swagger-ui:
+      enabled: true
+
+  mvc:
+    static-path-pattern: "/static/**"
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: lxl960218@qq.com
+    password: ednfndgryprdecjb # 授权码
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+logging:
+  level:
+    root: INFO
+    org.springframework: DEBUG
+  file:
+    max-size: 10MB
+    max-history: 180
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+
+
+sysUser: 张三
+age: 20
+money: 123.45
+birth: 1999/12/12
+
+message: "Hello World!"
+com:
+  esp:
+    helloworld:
+      entity:
+        users:
+          name: 李四
+          gender: 男
+          age: 22
+          money: 234.22
+          birth: 2008/12/12
